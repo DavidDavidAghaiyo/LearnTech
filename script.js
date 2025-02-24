@@ -1,3 +1,5 @@
+import { API_KEY } from "./config.js";
+
 const container = document.querySelector(".container");
 const chatsContainer = document.querySelector(".chats-container");
 const promptForm = document.querySelector(".prompt-form");
@@ -7,7 +9,6 @@ const fileUploadWrapper = promptForm.querySelector(".file-upload-wrapper");
 const themeToggle = document.querySelector("#theme-toggle-btn");
 
 //API Setup
-const API_KEY = "AIzaSyDw9MSGUDxI5owS2GaFW9xomInP25NCikk";
 
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
